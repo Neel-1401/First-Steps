@@ -1,36 +1,24 @@
-# QR Code Generator
+# First-Steps
 
-A Tkinter desktop app that generates real, scannable QR codes from any text or URL — with a save-to-PNG option.
+> My first projects — a collection of small Python programs from when I started learning to code. (C projects coming soon.)
 
-## Features
+## About
 
-- Generates spec-compliant QR codes (proper encoding, error correction, and masking) using the `qrcode` library
-- Live preview on a canvas inside the app
-- Save the generated QR code as a PNG file anywhere on your machine
-- Simple dark-themed UI
+This repo is where it all began. Before diving into DSA, algorithms, or anything structured, these were the small, scrappy programs I built to actually understand how code works — how a calculator evaluates expressions, how a timer keeps track of seconds, how a program generates a QR code from scratch.
 
-## Requirements
+None of these are polished or production-ready, and that's the point. They're a snapshot of the learning process.
 
-- Python 3.x
-- `qrcode` and `Pillow` (for image generation and display)
+## Why the publish date doesn't match when these were built
 
-Install dependencies:
-```bash
-pip install qrcode[pil]
-```
+These projects were actually written earlier, but I didn't understand Git/GitHub properly at the time, so they sat local until later — which is why the commit history here starts more recently than when the code was first written. The projects themselves are first-year work; the repo is just a late but honest record of them.
 
-## How to Run
+## What's inside
 
-```bash
-python qr_code_generator.py
-```
+### Python
+- Pomodoro Timer
+- QR Code Generator
+- Clipboard History Manager
+- Stopwatch + Timer Combo
 
-## Usage
-
-1. Type any text or URL into the input field.
-2. Click **GENERATE** to create the QR code — it's fully scannable with any phone camera or QR scanner app.
-3. Click **SAVE** to export it as a PNG file.
-
-## License
-
-Free to use and modify.
+---
+*Started coding: [2025] · First repo published: 2026*
