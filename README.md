@@ -1,24 +1,39 @@
-# First-Steps
+# Internet Speedometer
 
-> My first projects — a collection of small Python programs from when I started learning to code. (C projects coming soon.)
+A lightweight Tkinter desktop app that measures your download speed by timing a real file download — no external speed-test service or API key needed.
 
-## About
+## Features
 
-This repo is where it all began. Before diving into DSA, algorithms, or anything structured, these were the small, scrappy programs I built to actually understand how code works — how a calculator evaluates expressions, how a timer keeps track of seconds, how a program generates a QR code from scratch.
+- One-click download speed test (Mbps)
+- Runs the network request on a background thread so the UI never freezes
+- Minimal dark-themed interface
+- Clear status feedback (testing / complete / failed)
 
-None of these are polished or production-ready, and that's the point. They're a snapshot of the learning process.
+## How It Works
 
-## Why the publish date doesn't match when these were built
+The app downloads a 10MB test file from a public test server (`speedtest.tele2.net`) and measures the time taken, then calculates your effective download speed in megabits per second.
 
-These projects were actually written earlier, but I didn't understand Git/GitHub properly at the time, so they sat local until later — which is why the commit history here starts more recently than when the code was first written. The projects themselves are first-year work; the repo is just a late but honest record of them.
+> Note: results reflect real-world throughput to that specific server, so they may differ slightly from dedicated speed-test tools like Ookla's Speedtest, which use multiple servers/connections and also measure upload + ping.
 
-## What's inside
+## Requirements
 
-### Python
-- Pomodoro Timer
-- QR Code Generator
-- Clipboard History Manager
-- Stopwatch + Timer Combo
+- Python 3.x
+- Tkinter (included with most standard Python installations)
 
----
-*Started coding: [2025] · First repo published: 2026*
+No external packages needed — everything used (`threading`, `time`, `urllib.request`) is part of Python's standard library.
+
+## How to Run
+
+```bash
+python internet_speedometer.py
+```
+
+## Usage
+
+1. Click **START TEST**.
+2. Wait a few seconds while it downloads the test file in the background.
+3. Your download speed in Mbps will be displayed once complete.
+
+## License
+
+Free to use and modify.
