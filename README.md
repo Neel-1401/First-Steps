@@ -10,7 +10,7 @@ None of these are polished or production-ready, and that's the point. They're a 
 
 ## Why the publish date doesn't match when these were built
 
-These projects were actually written earlier, but I didn't understand Git/GitHub properly at the time, so they sat local until later — which is why the commit history here starts more recently than when the code was first written. The projects themselves are first-year work; the repo is just a late but record of them.
+These projects were actually written earlier, but I didn't understand Git/GitHub properly at the time, so they sat local until later — which is why the commit history here starts more recently than when the code was first written. The projects themselves are first-year work; the repo is just a late record of them.
 
 ## What's inside
 
